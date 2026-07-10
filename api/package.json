@@ -1,0 +1,9 @@
+{
+  "name": "ms-ventures-api",
+  "version": "1.0.0",
+  "description": "Contact-form API for the M&S Ventures Group website (Azure Static Web Apps managed function).",
+  "main": "contact/index.js",
+  "engines": {
+    "node": ">=18"
+  }
+}
