@@ -310,8 +310,8 @@
         </div>
       </div>
 
-      <!-- NOTE: replace YOUR_FORM_ID after setting up Formspree (see SETUP guide) -->
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <!-- Contact form posts to the in-house Azure Function /api/contact (Microsoft Graph mail + Turnstile verification). -->
+      <form id="contactForm" action="/api/contact" method="POST">
         <div class="field">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
@@ -332,10 +332,11 @@
         <!-- Honeypot: hidden anti-spam field. Real people leave it blank; bots fill it and get rejected. -->
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
 
-        <!-- CAPTCHA: Cloudflare Turnstile. Replace YOUR_TURNSTILE_SITEKEY (see SETUP guide §2). -->
-        <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITEKEY" data-theme="light"></div>
+        <!-- CAPTCHA: Cloudflare Turnstile widget "M&S Ventures Contact Form"; verified server-side in /api/contact. -->
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAADzd18dUZOW5K88B" data-theme="dark"></div>
 
-        <button type="submit" class="btn btn-primary">Send enquiry</button>
+        <button type="submit" class="btn btn-primary" id="contactSubmit">Send enquiry</button>
+        <p id="formStatus" class="form-note" role="status" aria-live="polite" style="display:none;"></p>
         <p class="form-note">Protected by anti-spam &amp; CAPTCHA. Your message is sent securely and we never share your details.</p>
       </form>
     </div>
@@ -361,6 +362,66 @@
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+(function(){
+  var form = document.getElementById('contactForm');
+  if(!form) return;
+  var statusEl = document.getElementById('formStatus');
+  var btn = document.getElementById('contactSubmit');
+  var messages = {
+    captcha: 'Please complete the anti-spam check and try again.',
+    missing_fields: 'Please fill in your name, email and message.',
+    bad_email: 'That email address doesn’t look right — please check it.',
+    not_configured: 'The form isn’t fully set up yet. Please email info@ms-ventures-group.com directly.',
+    mail_auth: 'Sorry, something went wrong sending your message. Please try again shortly.',
+    mail_send: 'Sorry, something went wrong sending your message. Please try again shortly.',
+    server: 'Sorry, something went wrong. Please try again shortly.',
+    network: 'Network problem — please check your connection and try again.'
+  };
+  function show(msg, ok){
+    statusEl.style.display = 'block';
+    statusEl.textContent = msg;
+    statusEl.style.color = ok ? '#1e8f5b' : '#c0392b';
+  }
+  function val(sel){ var el = form.querySelector(sel); return el ? el.value : ''; }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var tokenEl = form.querySelector('[name="cf-turnstile-response"]');
+    var token = tokenEl ? tokenEl.value : '';
+    if(!token){ show(messages.captcha, false); return; }
+    var payload = {
+      name: val('#name'),
+      email: val('#email'),
+      organisation: val('#org'),
+      message: val('#message'),
+      _gotcha: val('[name="_gotcha"]'),
+      'cf-turnstile-response': token
+    };
+    var label = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Sending…';
+    statusEl.style.display = 'none';
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function(r){
+      return r.json().catch(function(){ return { ok:false, error:'server' }; });
+    }).then(function(d){
+      if(window.turnstile){ try{ turnstile.reset(); }catch(err){} }
+      if(d && d.ok){
+        form.reset();
+        show('Thank you — your enquiry has been sent. We’ll be in touch.', true);
+      } else {
+        show(messages[d && d.error] || messages.server, false);
+      }
+    }).catch(function(){
+      if(window.turnstile){ try{ turnstile.reset(); }catch(err){} }
+      show(messages.network, false);
+    }).finally(function(){
+      btn.disabled = false; btn.textContent = label;
+    });
+  });
+})();
+document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
