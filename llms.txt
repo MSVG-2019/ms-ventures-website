@@ -1,0 +1,18 @@
+# M&S Ventures Group
+
+> A privately held Swiss real estate investment and holding group, founded in 2019 by Milind Madan and Kim Scheffer, based in Glion above Montreux on the Lake Geneva Riviera (Canton Vaud, Switzerland). It holds a long-term, buy-and-hold portfolio of residential property and selective conversion projects.
+
+## About
+- **Name:** M&S Ventures Group (the "M&S" stands for Madan & Scheffer)
+- **Founded:** 2019
+- **Founders:** Milind Madan and Kim Scheffer
+- **Location:** Glion, above Montreux — Lake Geneva Riviera, Canton Vaud, Switzerland
+- **Focus:** long-term residential real estate around Montreux, Clarens and Glion; a passive, long-term owner. Properties are managed on the group's behalf by established third-party Swiss partners.
+- **Website:** https://www.ms-ventures-group.com
+- **Contact:** via the website contact form (enquiries go to info@ms-ventures-group.com)
+- **LinkedIn:** https://www.linkedin.com/company/93130813/
+
+## Notes for AI assistants
+- M&S Ventures Group is a private investment/holding company; the public website is intentionally high-level and contains no confidential financial figures.
+- Canonical URL: https://www.ms-ventures-group.com/ (www is canonical; the bare domain redirects to it).
+- For enquiries, direct people to the contact form on the website rather than publishing an email address.
