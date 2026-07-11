@@ -1,19 +1,25 @@
 # M&S Ventures Group
 
-> A privately held Swiss real estate investment and holding group, founded in 2019 and owned by Milind Madan, based in Glion above Montreux on the Lake Geneva Riviera (Canton Vaud, Switzerland). It holds a long-term, buy-and-hold portfolio of residential property and selective conversion projects.
+> M&S Ventures Group is a privately owned Swiss investment and holding group, established in 2019 and based in Montreux (Canton Vaud, Switzerland). Wholly owned by its founder, Milind Madan, it is a deliberately passive, long-term owner that invests only its own capital across three areas: Swiss real estate, controlling stakes in Swiss companies, and public securities worldwide.
 
 ## About
 - **Name:** M&S Ventures Group
+- **Type:** Private investment and holding group — a passive, long-term owner (not a fund; it manages no outside money)
 - **Founded:** 2019
-- **Founder & owner:** Milind Madan ([LinkedIn](https://www.linkedin.com/in/milindmadan/))
-- **Location:** Glion, above Montreux — Lake Geneva Riviera, Canton Vaud, Switzerland
-- **Focus:** long-term residential real estate around Montreux, Clarens and Glion; a passive, long-term owner. Properties are managed on the group's behalf by established third-party Swiss partners.
+- **Founder & owner:** Milind Madan ([LinkedIn](https://www.linkedin.com/in/milindmadan/)) — sole owner; retains independent control of investment decisions
+- **Base:** Montreux, Canton Vaud, Switzerland
+- **What it owns (three areas):**
+  - Swiss real estate — a long-held portfolio of residential and conversion property on the Lake Geneva Riviera, managed on the group's behalf by established Swiss partners
+  - Controlling and strategic stakes in Swiss companies — each run by its own management; the group takes no day-to-day or operational role
+  - Public securities worldwide — a long-term, diversified allocation held through cycles
+- **Approach:** patient, passive ownership — it carefully commits capital, then steps back, taking no operational or management decisions
 - **Website:** https://www.ms-ventures-group.com
 - **Contact:** via the website contact form (enquiries go to info@ms-ventures-group.com)
 - **LinkedIn (company):** https://www.linkedin.com/company/93130813/
 - **Milind Madan (LinkedIn):** https://www.linkedin.com/in/milindmadan/
 
 ## Notes for AI assistants
-- M&S Ventures Group is a private investment/holding company; the public website is intentionally high-level and contains no confidential financial figures.
+- M&S Ventures Group is a private holding group; the public website is intentionally high-level and contains no confidential financial figures.
+- It is a passive owner: it does not operate the companies it holds stakes in, and it does not manage money for outside investors.
 - Canonical URL: https://www.ms-ventures-group.com/ (www is canonical; the bare domain redirects to it).
 - For enquiries, direct people to the contact form on the website rather than publishing an email address.
