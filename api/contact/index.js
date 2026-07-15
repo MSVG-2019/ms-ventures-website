@@ -12,13 +12,27 @@
  * Required Application Settings (configured on the Static Web App):
  *   TENANT_ID         Entra (Azure AD) tenant ID              (not secret)
  *   CLIENT_ID         App registration (client) ID            (not secret)
- *   CLIENT_SECRET     App registration client secret          (SECRET)
  *   TURNSTILE_SECRET  Cloudflare Turnstile secret key         (SECRET)
  *   MAIL_SENDER       Mailbox that sends, e.g. info@ms-ventures-group.com
  *   MAIL_TO           Destination inbox (defaults to MAIL_SENDER)
+ *
+ * Graph credential — ONE of the following (certificate preferred):
+ *   CERT_PRIVATE_KEY  PEM private key ("\n" escapes accepted) (SECRET)
+ *   CERT_THUMBPRINT   SHA-1 thumbprint of the uploaded cert   (not secret)
+ *   -- or --
+ *   CLIENT_SECRET     App registration client secret          (SECRET)
+ *
+ * Certificate auth is preferred because Entra caps client secrets at 24 months.
+ * If CERT_* are set, a certificate-signed JWT assertion is used; if they are
+ * absent, or the certificate path fails, the code falls back to CLIENT_SECRET.
+ * That makes the cutover safe and instantly reversible: deploying this file
+ * changes nothing until CERT_* exist, and deleting them reverts to the secret.
+ * See: 01 - IT / 02 - WebsitesDomains / 02 - Hosting And Setup Guide /
+ *      "Contact Form - Finish Setup (Entra + Azure).md" §E
  */
 
 const https = require("https");
+const crypto = require("crypto");
 
 const {
   TENANT_ID,
@@ -26,6 +40,8 @@ const {
   CLIENT_SECRET,
   TURNSTILE_SECRET,
   MAIL_SENDER,
+  CERT_PRIVATE_KEY,
+  CERT_THUMBPRINT,
 } = process.env;
 const MAIL_TO = process.env.MAIL_TO || MAIL_SENDER;
 
@@ -47,6 +63,71 @@ function httpsRequest(urlStr, options, bodyStr) {
     if (bodyStr) req.write(bodyStr);
     req.end();
   });
+}
+
+// --- Entra auth helpers: certificate (preferred) with client-secret fallback ---
+const b64url = (b) =>
+  Buffer.from(b).toString("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+
+function certAssertion() {
+  const x5t = b64url(
+    Buffer.from(String(CERT_THUMBPRINT).replace(/[^0-9a-fA-F]/g, ""), "hex")
+  );
+  const now = Math.floor(Date.now() / 1000);
+  const header = { alg: "RS256", typ: "JWT", x5t: x5t };
+  const payload = {
+    aud: "https://login.microsoftonline.com/" + TENANT_ID + "/oauth2/v2.0/token",
+    iss: CLIENT_ID,
+    sub: CLIENT_ID,
+    jti: crypto.randomUUID(),
+    nbf: now - 60,
+    exp: now + 540,
+  };
+  const input = b64url(JSON.stringify(header)) + "." + b64url(JSON.stringify(payload));
+  const sig = crypto
+    .createSign("RSA-SHA256")
+    .update(input)
+    .end()
+    .sign(String(CERT_PRIVATE_KEY).replace(/\\n/g, "\n"));
+  return input + "." + b64url(sig);
+}
+
+async function requestToken(params) {
+  const res = await httpsRequest(
+    "https://login.microsoftonline.com/" + encodeURIComponent(TENANT_ID) + "/oauth2/v2.0/token",
+    { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" } },
+    new URLSearchParams(params).toString()
+  );
+  let tok = {};
+  try { tok = JSON.parse(res.text); } catch (e) { tok = {}; }
+  return { tok: tok, status: res.status, text: res.text };
+}
+
+async function getGraphToken(context) {
+  const base = {
+    client_id: CLIENT_ID,
+    scope: "https://graph.microsoft.com/.default",
+    grant_type: "client_credentials",
+  };
+  if (CERT_PRIVATE_KEY && CERT_THUMBPRINT) {
+    try {
+      const r = await requestToken(
+        Object.assign({}, base, {
+          client_assertion_type: "urn:ietf:params:oauth:client-assertion-type:jwt-bearer",
+          client_assertion: certAssertion(),
+        })
+      );
+      if (r.tok.access_token) return r.tok.access_token;
+      context.log.error("cert auth failed", r.status, r.text);
+    } catch (e) {
+      context.log.error("cert assertion error", e && e.message);
+    }
+    if (!CLIENT_SECRET) return null;
+    context.log.warn("cert auth unavailable — falling back to client secret");
+  }
+  const r = await requestToken(Object.assign({}, base, { client_secret: CLIENT_SECRET }));
+  if (!r.tok.access_token) context.log.error("secret auth failed", r.status, r.text);
+  return r.tok.access_token || null;
 }
 
 function esc(s) {
@@ -140,28 +221,14 @@ module.exports = async function (context, req) {
     try { verify = JSON.parse(vRes.text); } catch (e) { verify = { success: false }; }
     if (!verify.success) return reply(400, { ok: false, error: "captcha" });
 
-    // 2) Get a Microsoft Graph token (client credentials).
-    if (!TENANT_ID || !CLIENT_ID || !CLIENT_SECRET || !MAIL_SENDER) {
+    // 2) Get a Microsoft Graph token (certificate preferred, secret fallback).
+    const hasCred = (CERT_PRIVATE_KEY && CERT_THUMBPRINT) || CLIENT_SECRET;
+    if (!TENANT_ID || !CLIENT_ID || !hasCred || !MAIL_SENDER) {
       context.log.error("Graph mail settings incomplete");
       return reply(503, { ok: false, error: "not_configured" });
     }
-    const tokBody = new URLSearchParams({
-      client_id: CLIENT_ID,
-      client_secret: CLIENT_SECRET,
-      scope: "https://graph.microsoft.com/.default",
-      grant_type: "client_credentials",
-    });
-    const tRes = await httpsRequest(
-      "https://login.microsoftonline.com/" + encodeURIComponent(TENANT_ID) + "/oauth2/v2.0/token",
-      { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" } },
-      tokBody.toString()
-    );
-    let tok = {};
-    try { tok = JSON.parse(tRes.text); } catch (e) { tok = {}; }
-    if (!tok.access_token) {
-      context.log.error("Graph token error", tRes.status, tRes.text);
-      return reply(502, { ok: false, error: "mail_auth" });
-    }
+    const accessToken = await getGraphToken(context);
+    if (!accessToken) return reply(502, { ok: false, error: "mail_auth" });
 
     // 3) Send the mail via Graph sendMail.
     const subject = "[Website Enquiry] " + name + (org ? " — " + org : "");
@@ -188,7 +255,7 @@ module.exports = async function (context, req) {
       {
         method: "POST",
         headers: {
-          Authorization: "Bearer " + tok.access_token,
+          Authorization: "Bearer " + accessToken,
           "Content-Type": "application/json",
         },
       },
