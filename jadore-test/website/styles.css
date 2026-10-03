@@ -26,3 +26,20 @@ html[lang="zh"] .hero h1 br:last-child{display:inline}
 
 /* Review-only notice: connected vendor links still open the existing live site. */
 .preview-note{font-size:14px;line-height:1.5;letter-spacing:.01em;overflow-wrap:anywhere}
+
+/* Let translated copy wrap within the phone screen instead of widening grid tracks. */
+@media(max-width:760px){
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero-copy{min-width:0}
+  .hero h1{overflow-wrap:anywhere}
+  .hero-ctas .button{max-width:100%;overflow-wrap:anywhere}
+  .booking-shell form{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .booking-shell label{min-width:0}
+  .booking-shell input,.booking-shell select{min-height:44px;font-size:16px}
+  .booking-shell .button{grid-column:1/-1;justify-content:center;overflow-wrap:anywhere}
+}
+@media(max-width:420px){
+  .hero h1{font-size:clamp(48px,17vw,66px)}
+  .booking-shell form{grid-template-columns:minmax(0,1fr)}
+  .booking-shell label{border-right:0;border-bottom:1px solid var(--line);padding:0 0 10px}
+}
