@@ -1,0 +1,75 @@
+{
+  "globalHeaders": {
+    "Content-Security-Policy": "default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; connect-src 'self'; frame-src 'none'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Robots-Tag": "noindex, nofollow",
+    "Cache-Control": "no-store"
+  },
+  "routes": [
+    {
+      "route": "/api/*",
+      "allowedRoles": [
+        "jadore_reviewer"
+      ],
+      "statusCode": 404
+    },
+    {
+      "route": "/concierge-config.js",
+      "headers": {
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow"
+      },
+      "allowedRoles": [
+        "jadore_reviewer"
+      ]
+    },
+    {
+      "route": "/public-knowledge.json",
+      "headers": {
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow"
+      },
+      "allowedRoles": [
+        "jadore_reviewer"
+      ]
+    },
+    {
+      "route": "/brand.html",
+      "headers": {
+        "Content-Security-Policy": "default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; connect-src 'self'; frame-src 'none'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store"
+      },
+      "allowedRoles": [
+        "jadore_reviewer"
+      ]
+    },
+    {
+      "route": "/brand-style-guide.html",
+      "headers": {
+        "Content-Security-Policy": "default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; connect-src 'self'; frame-src 'none'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store"
+      },
+      "allowedRoles": [
+        "jadore_reviewer"
+      ]
+    },
+    {
+      "route": "/*",
+      "allowedRoles": [
+        "jadore_reviewer"
+      ]
+    }
+  ],
+  "responseOverrides": {
+    "401": {
+      "statusCode": 302,
+      "redirect": "/.auth/login/aad"
+    }
+  }
+}

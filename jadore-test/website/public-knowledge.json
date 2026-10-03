@@ -1,0 +1,145 @@
+{
+  "version": "2026-10-03-preview",
+  "reviewed": "2026-10-03",
+  "scope": "Public factual FAQ only; operational sources reviewed separately; revalidate before launch.",
+  "sources": [
+    {
+      "id": "booking",
+      "title": "J’adore Montreux Booking Website",
+      "url": "https://jadore-montreux.holidayfuture.com/all-listings"
+    },
+    {
+      "id": "montreux-tax",
+      "title": "Commune de Montreux · Tourism and Tax Regulations",
+      "url": "https://www.montreux.ch/habiter-et-decouvrir/tourisme"
+    },
+    {
+      "id": "riviera-card",
+      "title": "Official Montreux Riviera Card",
+      "url": "https://www.montreuxriviera.com/en/PA372/montreux-riviera-card"
+    },
+    {
+      "id": "escape",
+      "title": "Montreux Escape · Current Listing",
+      "url": "https://jadore-montreux.holidayfuture.com/listings/157813"
+    },
+    {
+      "id": "downtown",
+      "title": "Stylish Downtown Montreux Apartment · Current Listing",
+      "url": "https://jadore-montreux.holidayfuture.com/listings/130594"
+    },
+    {
+      "id": "room",
+      "title": "Montreux Cozy Private Room · Current Listing",
+      "url": "https://jadore-montreux.holidayfuture.com/listings/130600"
+    },
+    {
+      "id": "host",
+      "title": "Contact the J’adore Montreux Team",
+      "url": "https://jadore-montreux.holidayfuture.com/contact-us"
+    }
+  ],
+  "entries": [
+    {
+      "id": "choose_stay",
+      "topic": "Choosing an apartment or private room; capacity and shared facilities",
+      "answers": {
+        "en": "Our selection includes entire apartments and private rooms. Montreux Escape accommodates up to five guests with two bedrooms and one bathroom; Stylish Downtown accommodates up to four with one bedroom and one bathroom. The Cozy Private Room accommodates two and has shared facilities. Check the specific listing and live availability before booking.",
+        "fr": "Notre sélection comprend des appartements entiers et des chambres privées. Montreux Escape accueille jusqu’à cinq voyageurs, avec deux chambres et une salle de bains ; Stylish Downtown jusqu’à quatre, avec une chambre et une salle de bains. La Cozy Private Room accueille deux personnes et dispose d’espaces partagés. Consultez chaque annonce et les disponibilités avant de réserver.",
+        "de": "Unsere Auswahl umfasst ganze Wohnungen und private Zimmer. Montreux Escape bietet Platz für bis zu fünf Gäste mit zwei Schlafzimmern und einem Bad; Stylish Downtown für bis zu vier mit einem Schlafzimmer und einem Bad. Das Cozy Private Room bietet Platz für zwei und hat gemeinsam genutzte Einrichtungen. Prüfen Sie das jeweilige Inserat und die aktuelle Verfügbarkeit.",
+        "es": "Nuestra selección incluye apartamentos enteros y habitaciones privadas. Montreux Escape admite hasta cinco huéspedes, con dos dormitorios y un baño; Stylish Downtown admite hasta cuatro, con un dormitorio y un baño. Cozy Private Room admite dos huéspedes y tiene instalaciones compartidas. Consulte el anuncio concreto y la disponibilidad actual antes de reservar.",
+        "zh": "我们的住宿选择包括整套公寓和独立客房。Montreux Escape 最多可住五人，设有两间卧室和一间浴室；Stylish Downtown 最多可住四人，设有一间卧室和一间浴室。Cozy Private Room 可住两人，部分设施需要共用。预订前，请查看具体房源和最新空房情况。"
+      },
+      "source_ids": [
+        "escape",
+        "downtown",
+        "room"
+      ]
+    },
+    {
+      "id": "taxes",
+      "topic": "General tourist tax explanation; avoid individual quotes and exemptions",
+      "answers": {
+        "en": "Montreux has separate regional and communal tourist taxes. For an ordinary taxable adult in the apartment category, the published rates are CHF 3 per person per night for each tax. Classification, exemptions and any amount already collected must be checked for your reservation. This is general information, not a payment request or a personalised quote.",
+        "fr": "Montreux applique une taxe de séjour régionale et une taxe communale distinctes. Pour un adulte normalement assujetti dans la catégorie appartement, les tarifs publiés sont de CHF 3 par personne et par nuit pour chaque taxe. La catégorie, les exemptions et les sommes déjà perçues doivent être vérifiées pour votre réservation. Il s’agit d’informations générales, pas d’une demande de paiement ni d’un devis personnel.",
+        "de": "Montreux erhebt eine regionale und eine separate kommunale Kurtaxe. Für einen regulär abgabepflichtigen Erwachsenen in der Kategorie Wohnung betragen die veröffentlichten Sätze jeweils CHF 3 pro Person und Nacht. Kategorie, Befreiungen und bereits eingezogene Beträge müssen für Ihre Buchung geprüft werden. Dies ist allgemeine Information, keine Zahlungsaufforderung und kein persönliches Angebot.",
+        "es": "Montreux aplica una tasa turística regional y una tasa turística municipal distintas. Para un adulto normalmente sujeto a estas tasas en la categoría de apartamento, las tarifas publicadas son de CHF 3 por persona y noche para cada tasa. La categoría, las exenciones y los importes ya cobrados deben comprobarse para su reserva. Esta es información general, no una solicitud de pago ni un presupuesto personalizado.",
+        "zh": "蒙特勒分别征收区域住宿税和市镇住宿税。对于公寓类别中通常需纳税的成人，公布的两项税率均为每人每晚 CHF 3。住宿分类、豁免条件以及已收取的金额，须按您的具体预订核对。这是一般信息，并非付款请求或个人报价。"
+      },
+      "source_ids": [
+        "montreux-tax"
+      ]
+    },
+    {
+      "id": "riviera_card",
+      "topic": "Riviera Card benefits, eligibility, delivery",
+      "answers": {
+        "en": "Ask your host to confirm Riviera Card eligibility, delivery and validity for your stay before travelling. The official Montreux Riviera guide explains the benefits and conditions. We cannot confirm that a card has been issued through this public concierge.",
+        "fr": "Avant votre voyage, demandez à votre hôte de confirmer votre éligibilité à la Riviera Card, sa remise et sa validité pour votre séjour. Le guide officiel Montreux Riviera explique ses avantages et conditions. Ce concierge public ne peut pas confirmer l’émission d’une carte.",
+        "de": "Lassen Sie vor der Reise Anspruch, Übergabe und Gültigkeit der Riviera Card für Ihren Aufenthalt vom Gastgeber bestätigen. Der offizielle Montreux Riviera Reiseführer erklärt Vorteile und Bedingungen. Dieser öffentliche Concierge kann keine Kartenausstellung bestätigen.",
+        "es": "Antes de viajar, pida al anfitrión que confirme su elegibilidad para la Riviera Card, cómo la recibirá y su validez durante la estancia. La guía oficial de Montreux Riviera explica sus ventajas y condiciones. Este concierge público no puede confirmar que se haya emitido una tarjeta.",
+        "zh": "出发前，请向房东确认 Riviera Card 的领取资格、领取方式及在您住宿期间的有效范围。Montreux Riviera 官方指南说明了相关权益和条件。这个公开礼宾服务无法确认是否已为您发卡。"
+      },
+      "source_ids": [
+        "riviera-card"
+      ]
+    },
+    {
+      "id": "arrival",
+      "topic": "General check-in process and registration; no access details",
+      "answers": {
+        "en": "Use the secure registration link in your reservation confirmation. Check the itemised tourist-tax balance and anything already collected, then verify property-specific arrival instructions and a working host contact. Contact your host through the reservation if a form or link fails. Never submit identity documents or access details here.",
+        "fr": "Utilisez le lien d’enregistrement sécurisé de votre confirmation. Vérifiez le détail des taxes de séjour et les sommes déjà perçues, puis les instructions d’arrivée propres au logement et un contact joignable. Si un formulaire ou un lien échoue, contactez votre hôte via la réservation. Ne transmettez jamais de documents d’identité ni de codes d’accès ici.",
+        "de": "Nutzen Sie den sicheren Registrierungslink in Ihrer Buchungsbestätigung. Prüfen Sie Kurtaxen und bereits eingezogene Beträge sowie die Anreiseinformationen Ihrer Unterkunft und einen erreichbaren Gastgeber. Wenn ein Formular oder Link nicht funktioniert, kontaktieren Sie den Gastgeber über Ihre Buchung. Übermitteln Sie hier niemals Ausweisdokumente oder Zugangsdaten.",
+        "es": "Utilice el enlace de registro seguro de su confirmación de reserva. Compruebe el desglose del saldo de las tasas turísticas y los importes ya cobrados; después, verifique las instrucciones de llegada específicas de su alojamiento y un contacto disponible del anfitrión. Si un formulario o enlace falla, contacte con el anfitrión a través de su reserva. Nunca envíe aquí documentos de identidad ni datos de acceso.",
+        "zh": "请使用预订确认信息中的安全登记链接。核对住宿税明细余额及已收取的金额，再确认住宿专属入住说明和可联系到的房东。如表单或链接无法使用，请通过预订渠道联系房东。切勿在这里提交身份证件或门禁信息。"
+      },
+      "source_ids": [
+        "host"
+      ]
+    },
+    {
+      "id": "parking",
+      "topic": "General parking and late arrival questions",
+      "answers": {
+        "en": "Parking and late arrival arrangements depend on the property. Check your chosen listing and confirm the arrival time with the host before booking. Parking is not included with every stay.",
+        "fr": "Le stationnement et les arrivées tardives dépendent du logement. Consultez l’annonce choisie et confirmez l’horaire avec votre hôte avant de réserver. Le stationnement n’est pas inclus dans tous les séjours.",
+        "de": "Parkmöglichkeiten und späte Anreise hängen von der Unterkunft ab. Prüfen Sie das ausgewählte Inserat und bestätigen Sie die Ankunftszeit vor der Buchung mit dem Gastgeber. Parken ist nicht bei jedem Aufenthalt enthalten.",
+        "es": "Las condiciones de aparcamiento y llegada tardía dependen del alojamiento. Consulte el anuncio elegido y confirme la hora de llegada con el anfitrión antes de reservar. El aparcamiento no está incluido en todas las estancias.",
+        "zh": "停车和较晚入住的安排取决于具体住宿。预订前，请查看所选房源，并与房东确认抵达时间。并非每次住宿都包含停车。"
+      },
+      "source_ids": [
+        "booking",
+        "host"
+      ]
+    },
+    {
+      "id": "booking",
+      "topic": "Direct booking, current availability and cancellation terms; no price promise",
+      "answers": {
+        "en": "Select your dates and guest count on the booking website to see live availability and the current quote. Review the payment schedule, cancellation terms and itemised mandatory charges, including tourist taxes and any amounts already collected, before paying. This concierge cannot make or change a reservation.",
+        "fr": "Choisissez vos dates et le nombre de voyageurs sur le site de réservation pour consulter les disponibilités et le devis actuel. Avant de payer, vérifiez l’échéancier de paiement, les conditions d’annulation et le détail des frais obligatoires, y compris les taxes de séjour et les sommes déjà perçues. Ce concierge ne peut ni créer ni modifier une réservation.",
+        "de": "Wählen Sie auf der Buchungswebsite Reisedaten und Gästezahl, um aktuelle Verfügbarkeit und das aktuelle Angebot zu sehen. Prüfen Sie vor der Zahlung Zahlungsplan, Stornierungsbedingungen und aufgeschlüsselte Pflichtgebühren einschließlich Kurtaxen und bereits eingezogener Beträge. Dieser Concierge kann keine Buchung erstellen oder ändern.",
+        "es": "Elija sus fechas y el número de huéspedes en el sitio de reservas para consultar la disponibilidad actual y el presupuesto vigente. Antes de pagar, revise el calendario de pagos, las condiciones de cancelación y el desglose de los cargos obligatorios, incluidas las tasas turísticas y los importes ya cobrados. Este concierge no puede crear ni modificar una reserva.",
+        "zh": "请在预订网站选择日期和入住人数，查看最新空房情况和当前报价。付款前，请核对付款安排、取消条款和必付费用明细，包括住宿税及已收取的金额。这个礼宾服务无法创建或修改预订。"
+      },
+      "source_ids": [
+        "booking"
+      ]
+    },
+    {
+      "id": "host_help",
+      "topic": "Private or reservation-specific information, access codes, payments, refunds, unknown answers or emergencies",
+      "answers": {
+        "en": "Please contact your host through your reservation confirmation for help with your stay, access, payments or changes. Do not share personal details, identity documents, card numbers or access codes here. This public concierge cannot verify a reservation or arrange emergency assistance.",
+        "fr": "Contactez votre hôte via votre confirmation pour toute question sur votre séjour, l’accès, les paiements ou les modifications. Ne partagez ici aucune donnée personnelle, aucun document d’identité, numéro de carte ou code d’accès. Ce concierge public ne peut pas vérifier une réservation ni organiser une assistance d’urgence.",
+        "de": "Kontaktieren Sie Ihren Gastgeber über die Buchungsbestätigung bei Fragen zu Aufenthalt, Zugang, Zahlungen oder Änderungen. Teilen Sie hier keine persönlichen Daten, Ausweisdokumente, Kartennummern oder Zugangscodes. Dieser öffentliche Concierge kann keine Buchung prüfen oder Notfallhilfe organisieren.",
+        "es": "Contacte con el anfitrión mediante su confirmación de reserva para recibir ayuda sobre la estancia, el acceso, los pagos o los cambios. No comparta aquí datos personales, documentos de identidad, números de tarjeta ni códigos de acceso. Este concierge público no puede verificar una reserva ni organizar asistencia de emergencia.",
+        "zh": "有关住宿、门禁、付款或修改的协助，请使用预订确认信息中的联系方式联系房东。不要在这里分享个人资料、身份证件、银行卡号或门禁代码。这个公开礼宾服务无法核实预订或安排紧急救助。"
+      },
+      "source_ids": [
+        "host"
+      ]
+    }
+  ]
+}

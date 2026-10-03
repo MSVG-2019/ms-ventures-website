@@ -1,0 +1,1061 @@
+{
+  "schemaVersion": 1,
+  "verifiedOn": "2026-10-03",
+  "records": [
+    {
+      "id": "130594",
+      "name": "Stylish Downtown Montreux Apartment – Ideal for 4",
+      "kind": "apartment",
+      "maxGuests": 4,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "featuredPath": "/stays/stylish-downtown-apartment/",
+      "image": {
+        "src": "/assets/downtown-apartment.webp",
+        "alt": {
+          "en": "Living area shown in the Stylish Downtown Apartment listing",
+          "fr": "Pièce de vie présentée dans l’annonce Stylish Downtown Apartment",
+          "de": "Wohnbereich aus dem Angebot Stylish Downtown Apartment",
+          "es": "Zona de estar mostrada en el anuncio de Stylish Downtown Apartment",
+          "zh": "Stylish Downtown Apartment 房源中展示的起居空间"
+        }
+      },
+      "summary": {
+        "en": "A one-bedroom apartment in central Montreux with mountain views.",
+        "fr": "Un appartement d’une chambre au centre de Montreux, avec vue sur les montagnes.",
+        "de": "Ein Apartment mit einem Schlafzimmer im Zentrum von Montreux und Bergblick.",
+        "es": "Un apartamento de un dormitorio en el centro de Montreux, con vistas a las montañas.",
+        "zh": "位于蒙特勒市中心的一卧室公寓，可欣赏山景。"
+      },
+      "facts": {
+        "en": [
+          "Kitchen",
+          "Wi-Fi",
+          "Washing machine"
+        ],
+        "fr": [
+          "Cuisine",
+          "Wi-Fi",
+          "Lave-linge"
+        ],
+        "de": [
+          "Küche",
+          "WLAN",
+          "Waschmaschine"
+        ],
+        "es": [
+          "Cocina",
+          "Wi-Fi",
+          "Lavadora"
+        ],
+        "zh": [
+          "厨房",
+          "Wi-Fi",
+          "洗衣机"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Fourth floor. Confirm lift availability and access before booking."
+        ],
+        "fr": [
+          "Quatrième étage. Confirmez la présence d’un ascenseur et les conditions d’accès avant de réserver."
+        ],
+        "de": [
+          "Vierter Stock. Bestätigen Sie vor der Buchung, ob ein Aufzug vorhanden ist und wie der Zugang erfolgt."
+        ],
+        "es": [
+          "Cuarta planta. Confirme la disponibilidad de ascensor y las condiciones de acceso antes de reservar."
+        ],
+        "zh": [
+          "位于四楼。预订前请确认是否有电梯及出入条件。"
+        ]
+      }
+    },
+    {
+      "id": "130595",
+      "name": "Montreux Balcony Retreat - Lake Proximity",
+      "kind": "private-room",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "bathrooms": null,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-130595.webp",
+        "alt": {
+          "en": "Bedroom shown in the Balcony Retreat listing",
+          "fr": "Chambre présentée dans l’annonce Balcony Retreat",
+          "de": "Schlafzimmer aus dem Angebot Balcony Retreat",
+          "es": "Dormitorio mostrado en el anuncio de Balcony Retreat",
+          "zh": "Balcony Retreat 房源中展示的卧室"
+        }
+      },
+      "summary": {
+        "en": "A bedroom stay in Montreux with a private balcony.",
+        "fr": "Un séjour en chambre à Montreux, avec un balcon privé.",
+        "de": "Ein Zimmeraufenthalt in Montreux mit privatem Balkon.",
+        "es": "Una estancia en habitación en Montreux, con balcón privado.",
+        "zh": "蒙特勒的一间卧室住宿，带私人阳台。"
+      },
+      "facts": {
+        "en": [
+          "Private balcony",
+          "Kitchen access",
+          "Washing machine"
+        ],
+        "fr": [
+          "Balcon privé",
+          "Accès à la cuisine",
+          "Lave-linge"
+        ],
+        "de": [
+          "Privater Balkon",
+          "Küchenzugang",
+          "Waschmaschine"
+        ],
+        "es": [
+          "Balcón privado",
+          "Acceso a la cocina",
+          "Lavadora"
+        ],
+        "zh": [
+          "私人阳台",
+          "可使用厨房",
+          "洗衣机"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Confirm your assigned bedroom and which bathroom and kitchen facilities are private or shared before booking."
+        ],
+        "fr": [
+          "Avant de réserver, confirmez la chambre attribuée et si la salle de bains et la cuisine sont privées ou partagées."
+        ],
+        "de": [
+          "Bestätigen Sie vor der Buchung das zugewiesene Zimmer und ob Badezimmer und Küche privat oder gemeinsam genutzt werden."
+        ],
+        "es": [
+          "Antes de reservar, confirme la habitación asignada y si el baño y la cocina son privados o compartidos."
+        ],
+        "zh": [
+          "预订前，请确认分配给您的卧室，以及浴室和厨房哪些为独用、哪些需共用。"
+        ]
+      }
+    },
+    {
+      "id": "130597",
+      "name": "Cozy City Retreat: Modern & Inviting",
+      "kind": "private-room",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "bathrooms": null,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-130597.webp",
+        "alt": {
+          "en": "Bedroom shown in the Cozy City Retreat room listing",
+          "fr": "Chambre présentée dans l’annonce de chambre Cozy City Retreat",
+          "de": "Schlafzimmer aus dem Zimmerangebot Cozy City Retreat",
+          "es": "Dormitorio mostrado en el anuncio de habitación de Cozy City Retreat",
+          "zh": "Cozy City Retreat 客房房源中展示的卧室"
+        }
+      },
+      "summary": {
+        "en": "A bedroom in a two-bedroom home in Montreux.",
+        "fr": "Une chambre dans un logement de deux chambres à Montreux.",
+        "de": "Ein Zimmer in einer Unterkunft mit zwei Schlafzimmern in Montreux.",
+        "es": "Una habitación en un alojamiento de dos dormitorios en Montreux.",
+        "zh": "位于蒙特勒一套两卧室住宅中的一间卧室。"
+      },
+      "facts": {
+        "en": [
+          "Kitchen access",
+          "Washing machine"
+        ],
+        "fr": [
+          "Accès à la cuisine",
+          "Lave-linge"
+        ],
+        "de": [
+          "Küchenzugang",
+          "Waschmaschine"
+        ],
+        "es": [
+          "Acceso a la cocina",
+          "Lavadora"
+        ],
+        "zh": [
+          "可使用厨房",
+          "洗衣机"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Confirm your assigned bedroom and which bathroom and kitchen facilities are private or shared before booking."
+        ],
+        "fr": [
+          "Avant de réserver, confirmez la chambre attribuée et si la salle de bains et la cuisine sont privées ou partagées."
+        ],
+        "de": [
+          "Bestätigen Sie vor der Buchung das zugewiesene Zimmer und ob Badezimmer und Küche privat oder gemeinsam genutzt werden."
+        ],
+        "es": [
+          "Antes de reservar, confirme la habitación asignada y si el baño y la cocina son privados o compartidos."
+        ],
+        "zh": [
+          "预订前，请确认分配给您的卧室，以及浴室和厨房哪些为独用、哪些需共用。"
+        ]
+      }
+    },
+    {
+      "id": "130600",
+      "name": "Montreux Cozy Private Room",
+      "kind": "private-room",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "bathrooms": null,
+      "featuredPath": "/stays/montreux-cozy-private-room/",
+      "image": {
+        "src": "/assets/private-room-twin-bedroom.webp",
+        "alt": {
+          "en": "Bedroom shown in the Montreux Cozy Private Room listing",
+          "fr": "Chambre présentée dans l’annonce Montreux Cozy Private Room",
+          "de": "Schlafzimmer aus dem Angebot Montreux Cozy Private Room",
+          "es": "Dormitorio mostrado en el anuncio de Montreux Cozy Private Room",
+          "zh": "Montreux Cozy Private Room 房源中展示的卧室"
+        }
+      },
+      "summary": {
+        "en": "A private bedroom in a two-bedroom apartment, with balcony access and a shared living room.",
+        "fr": "Une chambre privée dans un appartement de deux chambres, avec accès au balcon et salon partagé.",
+        "de": "Ein Privatzimmer in einem Apartment mit zwei Schlafzimmern, Balkonzugang und gemeinsam genutztem Wohnzimmer.",
+        "es": "Una habitación privada en un apartamento de dos dormitorios, con acceso al balcón y salón compartido.",
+        "zh": "两卧室公寓中的一间独立卧室，可使用阳台，并设有共用客厅。"
+      },
+      "facts": {
+        "en": [
+          "Balcony access",
+          "Shared living room with lake views",
+          "Kitchen access"
+        ],
+        "fr": [
+          "Accès au balcon",
+          "Salon partagé avec vue sur le lac",
+          "Accès à la cuisine"
+        ],
+        "de": [
+          "Balkonzugang",
+          "Gemeinsames Wohnzimmer mit Seeblick",
+          "Küchenzugang"
+        ],
+        "es": [
+          "Acceso al balcón",
+          "Salón compartido con vistas al lago",
+          "Acceso a la cocina"
+        ],
+        "zh": [
+          "可使用阳台",
+          "可欣赏湖景的共用客厅",
+          "可使用厨房"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Confirm the assigned bedroom and the private or shared bathroom and kitchen arrangements before booking."
+        ],
+        "fr": [
+          "Avant de réserver, confirmez la chambre attribuée et si la salle de bains et la cuisine sont privées ou partagées."
+        ],
+        "de": [
+          "Bestätigen Sie vor der Buchung das zugewiesene Zimmer und ob Badezimmer und Küche privat oder gemeinsam genutzt werden."
+        ],
+        "es": [
+          "Antes de reservar, confirme la habitación asignada y si el baño y la cocina son privados o compartidos."
+        ],
+        "zh": [
+          "预订前，请确认所分配的卧室，以及浴室和厨房的独用或共用安排。"
+        ]
+      }
+    },
+    {
+      "id": "130601",
+      "name": "Montreux Cozy Private Room",
+      "kind": "private-room",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "bathrooms": null,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-130601.webp",
+        "alt": {
+          "en": "Bedroom shown in this Montreux Cozy Private Room listing",
+          "fr": "Chambre présentée dans cette annonce Montreux Cozy Private Room",
+          "de": "Schlafzimmer aus diesem Angebot Montreux Cozy Private Room",
+          "es": "Dormitorio mostrado en este anuncio de Montreux Cozy Private Room",
+          "zh": "此 Montreux Cozy Private Room 房源中展示的卧室"
+        }
+      },
+      "summary": {
+        "en": "A private bedroom in a two-bedroom apartment, with balcony access and a shared living room.",
+        "fr": "Une chambre privée dans un appartement de deux chambres, avec accès au balcon et salon partagé.",
+        "de": "Ein Privatzimmer in einem Apartment mit zwei Schlafzimmern, Balkonzugang und gemeinsam genutztem Wohnzimmer.",
+        "es": "Una habitación privada en un apartamento de dos dormitorios, con acceso al balcón y salón compartido.",
+        "zh": "两卧室公寓中的一间独立卧室，可使用阳台，并设有共用客厅。"
+      },
+      "facts": {
+        "en": [
+          "Balcony access",
+          "Shared living room with lake views",
+          "Kitchen access"
+        ],
+        "fr": [
+          "Accès au balcon",
+          "Salon partagé avec vue sur le lac",
+          "Accès à la cuisine"
+        ],
+        "de": [
+          "Balkonzugang",
+          "Gemeinsames Wohnzimmer mit Seeblick",
+          "Küchenzugang"
+        ],
+        "es": [
+          "Acceso al balcón",
+          "Salón compartido con vistas al lago",
+          "Acceso a la cocina"
+        ],
+        "zh": [
+          "可使用阳台",
+          "可欣赏湖景的共用客厅",
+          "可使用厨房"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Confirm the assigned bedroom and the private or shared bathroom and kitchen arrangements before booking."
+        ],
+        "fr": [
+          "Avant de réserver, confirmez la chambre attribuée et si la salle de bains et la cuisine sont privées ou partagées."
+        ],
+        "de": [
+          "Bestätigen Sie vor der Buchung das zugewiesene Zimmer und ob Badezimmer und Küche privat oder gemeinsam genutzt werden."
+        ],
+        "es": [
+          "Antes de reservar, confirme la habitación asignada y si el baño y la cocina son privados o compartidos."
+        ],
+        "zh": [
+          "预订前，请确认所分配的卧室，以及浴室和厨房的独用或共用安排。"
+        ]
+      }
+    },
+    {
+      "id": "130306",
+      "name": "Montreux Balcony Haven: Lake Proximity",
+      "kind": "private-room",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "bathrooms": null,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-130306.webp",
+        "alt": {
+          "en": "Bedroom shown in the Balcony Haven listing",
+          "fr": "Chambre présentée dans l’annonce Balcony Haven",
+          "de": "Schlafzimmer aus dem Angebot Balcony Haven",
+          "es": "Dormitorio mostrado en el anuncio de Balcony Haven",
+          "zh": "Balcony Haven 房源中展示的卧室"
+        }
+      },
+      "summary": {
+        "en": "A bedroom stay in Montreux with a private balcony.",
+        "fr": "Un séjour en chambre à Montreux, avec un balcon privé.",
+        "de": "Ein Zimmeraufenthalt in Montreux mit privatem Balkon.",
+        "es": "Una estancia en habitación en Montreux, con balcón privado.",
+        "zh": "蒙特勒的一间卧室住宿，带私人阳台。"
+      },
+      "facts": {
+        "en": [
+          "Private balcony",
+          "Kitchen access",
+          "Internet"
+        ],
+        "fr": [
+          "Balcon privé",
+          "Accès à la cuisine",
+          "Internet"
+        ],
+        "de": [
+          "Privater Balkon",
+          "Küchenzugang",
+          "Internet"
+        ],
+        "es": [
+          "Balcón privado",
+          "Acceso a la cocina",
+          "Internet"
+        ],
+        "zh": [
+          "私人阳台",
+          "可使用厨房",
+          "网络"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Confirm your assigned bedroom and which bathroom and kitchen facilities are private or shared before booking."
+        ],
+        "fr": [
+          "Avant de réserver, confirmez la chambre attribuée et si la salle de bains et la cuisine sont privées ou partagées."
+        ],
+        "de": [
+          "Bestätigen Sie vor der Buchung das zugewiesene Zimmer und ob Badezimmer und Küche privat oder gemeinsam genutzt werden."
+        ],
+        "es": [
+          "Antes de reservar, confirme la habitación asignada y si el baño y la cocina son privados o compartidos."
+        ],
+        "zh": [
+          "预订前，请确认分配给您的卧室，以及浴室和厨房哪些为独用、哪些需共用。"
+        ]
+      }
+    },
+    {
+      "id": "182255",
+      "name": "Chic Lakeside Haven - Freshly Renovated Studio",
+      "kind": "studio",
+      "maxGuests": 3,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-182255.webp",
+        "alt": {
+          "en": "Bed shown in the Chic Lakeside Haven studio listing",
+          "fr": "Lit présenté dans l’annonce du studio Chic Lakeside Haven",
+          "de": "Bett aus dem Studioangebot Chic Lakeside Haven",
+          "es": "Cama mostrada en el anuncio del estudio Chic Lakeside Haven",
+          "zh": "Chic Lakeside Haven 单间公寓房源中展示的床"
+        }
+      },
+      "summary": {
+        "en": "A studio in Montreux with a kitchen and washing machine.",
+        "fr": "Un studio à Montreux avec cuisine et lave-linge.",
+        "de": "Ein Studio in Montreux mit Küche und Waschmaschine.",
+        "es": "Un estudio en Montreux, con cocina y lavadora.",
+        "zh": "蒙特勒的一间单间公寓，设有厨房和洗衣机。"
+      },
+      "facts": {
+        "en": [
+          "Kitchen",
+          "Washing machine",
+          "Pets allowed"
+        ],
+        "fr": [
+          "Cuisine",
+          "Lave-linge",
+          "Animaux admis"
+        ],
+        "de": [
+          "Küche",
+          "Waschmaschine",
+          "Haustiere erlaubt"
+        ],
+        "es": [
+          "Cocina",
+          "Lavadora",
+          "Se admiten mascotas"
+        ],
+        "zh": [
+          "厨房",
+          "洗衣机",
+          "允许携带宠物"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "The listing reports roofworks from 31 August to approximately mid-November 2026, with scaffolding and possible daytime weekday noise. Dates are weather-dependent; confirm the current situation before booking."
+        ],
+        "fr": [
+          "L’annonce signale des travaux de toiture du 31 août à environ mi-novembre 2026, avec échafaudages et bruit possible en journée en semaine. Les dates dépendent de la météo ; confirmez la situation actuelle avant de réserver."
+        ],
+        "de": [
+          "Das Inserat nennt Dacharbeiten vom 31. August bis etwa Mitte November 2026, mit Gerüst und möglichem Lärm tagsüber an Werktagen. Die Termine sind wetterabhängig; bestätigen Sie vor der Buchung die aktuelle Situation."
+        ],
+        "es": [
+          "El anuncio informa de obras en la cubierta desde el 31 de agosto hasta aproximadamente mediados de noviembre de 2026, con andamios y posible ruido diurno entre semana. Las fechas dependen del tiempo; confirme la situación actual antes de reservar."
+        ],
+        "zh": [
+          "房源说明称，屋顶工程计划自 2026 年 8 月 31 日持续至约 11 月中旬，期间设有脚手架，工作日白天可能有噪音。工期受天气影响；预订前请确认当前情况。"
+        ]
+      }
+    },
+    {
+      "id": "131399",
+      "name": "Deluxe 2BR Suite with Balcony Views",
+      "kind": "apartment",
+      "maxGuests": 6,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-131399.webp",
+        "alt": {
+          "en": "Bedroom shown in the Deluxe 2BR Suite listing",
+          "fr": "Chambre présentée dans l’annonce Deluxe 2BR Suite",
+          "de": "Schlafzimmer aus dem Angebot Deluxe 2BR Suite",
+          "es": "Dormitorio mostrado en el anuncio de Deluxe 2BR Suite",
+          "zh": "Deluxe 2BR Suite 房源中展示的卧室"
+        }
+      },
+      "summary": {
+        "en": "A two-bedroom apartment with two bathrooms, two private balconies and mountain views.",
+        "fr": "Un appartement de deux chambres, avec deux salles de bains, deux balcons privés et vue sur les montagnes.",
+        "de": "Ein Apartment mit zwei Schlafzimmern, zwei Badezimmern, zwei privaten Balkonen und Bergblick.",
+        "es": "Un apartamento de dos dormitorios, con dos baños, dos balcones privados y vistas a las montañas.",
+        "zh": "一套两卧室公寓，设有两间浴室、两个私人阳台，可欣赏山景。"
+      },
+      "facts": {
+        "en": [
+          "Two private balconies",
+          "Kitchen",
+          "Wi-Fi",
+          "Washing machine"
+        ],
+        "fr": [
+          "Deux balcons privés",
+          "Cuisine",
+          "Wi-Fi",
+          "Lave-linge"
+        ],
+        "de": [
+          "Zwei private Balkone",
+          "Küche",
+          "WLAN",
+          "Waschmaschine"
+        ],
+        "es": [
+          "Dos balcones privados",
+          "Cocina",
+          "Wi-Fi",
+          "Lavadora"
+        ],
+        "zh": [
+          "两个私人阳台",
+          "厨房",
+          "Wi-Fi",
+          "洗衣机"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Third floor, without a lift. Access requires stairs."
+        ],
+        "fr": [
+          "Troisième étage, sans ascenseur. L’accès se fait par les escaliers."
+        ],
+        "de": [
+          "Dritter Stock ohne Aufzug. Der Zugang erfolgt über Treppen."
+        ],
+        "es": [
+          "Tercera planta, sin ascensor. El acceso requiere subir escaleras."
+        ],
+        "zh": [
+          "位于三楼，没有电梯。需要走楼梯。"
+        ]
+      }
+    },
+    {
+      "id": "165778",
+      "name": "Terrace & Tub in Montreux | Cozy City Escape",
+      "kind": "apartment",
+      "maxGuests": 4,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-165778.webp",
+        "alt": {
+          "en": "Living and kitchen area shown in the Terrace & Tub listing",
+          "fr": "Pièce de vie et cuisine présentées dans l’annonce Terrace & Tub",
+          "de": "Wohnbereich und Küche aus dem Angebot Terrace & Tub",
+          "es": "Zona de estar y cocina mostradas en el anuncio de Terrace & Tub",
+          "zh": "Terrace & Tub 房源中展示的起居及厨房空间"
+        }
+      },
+      "summary": {
+        "en": "A one-bedroom apartment with a king-size bed, bathtub and private terrace.",
+        "fr": "Un appartement d’une chambre, avec lit king-size, baignoire et terrasse privée.",
+        "de": "Ein Apartment mit einem Schlafzimmer, Kingsize-Bett, Badewanne und privater Terrasse.",
+        "es": "Un apartamento de un dormitorio, con cama king-size, bañera y terraza privada.",
+        "zh": "一卧室公寓，设有特大床、浴缸和私人露台。"
+      },
+      "facts": {
+        "en": [
+          "Private terrace",
+          "Bathtub",
+          "King-size bed",
+          "Wi-Fi"
+        ],
+        "fr": [
+          "Terrasse privée",
+          "Baignoire",
+          "Lit king-size",
+          "Wi-Fi"
+        ],
+        "de": [
+          "Private Terrasse",
+          "Badewanne",
+          "Kingsize-Bett",
+          "WLAN"
+        ],
+        "es": [
+          "Terraza privada",
+          "Bañera",
+          "Cama king-size",
+          "Wi-Fi"
+        ],
+        "zh": [
+          "私人露台",
+          "浴缸",
+          "特大床",
+          "Wi-Fi"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Quiet hours: 22:00–07:00."
+        ],
+        "fr": [
+          "Heures de tranquillité : 22 h–7 h."
+        ],
+        "de": [
+          "Ruhezeiten: 22:00–07:00 Uhr."
+        ],
+        "es": [
+          "Horario de silencio: 22:00–07:00."
+        ],
+        "zh": [
+          "安静时段：22:00–07:00。"
+        ]
+      }
+    },
+    {
+      "id": "140774",
+      "name": "Cozy Lakeview Nest in Montreux",
+      "kind": "apartment",
+      "maxGuests": 4,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-140774.webp",
+        "alt": {
+          "en": "Balcony shown in the Cozy Lakeview Nest listing",
+          "fr": "Balcon présenté dans l’annonce Cozy Lakeview Nest",
+          "de": "Balkon aus dem Angebot Cozy Lakeview Nest",
+          "es": "Balcón mostrado en el anuncio de Cozy Lakeview Nest",
+          "zh": "Cozy Lakeview Nest 房源中展示的阳台"
+        }
+      },
+      "summary": {
+        "en": "A one-bedroom apartment with views of Lake Geneva.",
+        "fr": "Un appartement d’une chambre, avec vue sur le lac Léman.",
+        "de": "Ein Apartment mit einem Schlafzimmer und Blick auf den Genfersee.",
+        "es": "Un apartamento de un dormitorio, con vistas al lago Lemán.",
+        "zh": "一卧室公寓，可欣赏日内瓦湖景。"
+      },
+      "facts": {
+        "en": [
+          "Lake views",
+          "Kitchen",
+          "Washing machine",
+          "Pets allowed"
+        ],
+        "fr": [
+          "Vue sur le lac",
+          "Cuisine",
+          "Lave-linge",
+          "Animaux admis"
+        ],
+        "de": [
+          "Seeblick",
+          "Küche",
+          "Waschmaschine",
+          "Haustiere erlaubt"
+        ],
+        "es": [
+          "Vistas al lago",
+          "Cocina",
+          "Lavadora",
+          "Se admiten mascotas"
+        ],
+        "zh": [
+          "湖景",
+          "厨房",
+          "洗衣机",
+          "允许携带宠物"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Fourth floor, without a lift. Access requires stairs."
+        ],
+        "fr": [
+          "Quatrième étage, sans ascenseur. L’accès se fait par les escaliers."
+        ],
+        "de": [
+          "Vierter Stock ohne Aufzug. Der Zugang erfolgt über Treppen."
+        ],
+        "es": [
+          "Cuarta planta, sin ascensor. El acceso requiere subir escaleras."
+        ],
+        "zh": [
+          "位于四楼，没有电梯。需要走楼梯。"
+        ]
+      }
+    },
+    {
+      "id": "130591",
+      "name": "Cozy City Retreat: Modern & Inviting",
+      "kind": "apartment",
+      "maxGuests": 6,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-130591.webp",
+        "alt": {
+          "en": "Kitchen shown in the Cozy City Retreat apartment listing",
+          "fr": "Cuisine présentée dans l’annonce d’appartement Cozy City Retreat",
+          "de": "Küche aus dem Apartmentangebot Cozy City Retreat",
+          "es": "Cocina mostrada en el anuncio de apartamento de Cozy City Retreat",
+          "zh": "Cozy City Retreat 整套公寓房源中展示的厨房"
+        }
+      },
+      "summary": {
+        "en": "A two-bedroom apartment in Montreux with a balcony.",
+        "fr": "Un appartement de deux chambres à Montreux, avec balcon.",
+        "de": "Ein Apartment mit zwei Schlafzimmern und Balkon in Montreux.",
+        "es": "Un apartamento de dos dormitorios en Montreux, con balcón.",
+        "zh": "位于蒙特勒的一套两卧室公寓，带阳台。"
+      },
+      "facts": {
+        "en": [
+          "Balcony",
+          "Kitchen",
+          "Washing machine",
+          "Pets allowed"
+        ],
+        "fr": [
+          "Balcon",
+          "Cuisine",
+          "Lave-linge",
+          "Animaux admis"
+        ],
+        "de": [
+          "Balkon",
+          "Küche",
+          "Waschmaschine",
+          "Haustiere erlaubt"
+        ],
+        "es": [
+          "Balcón",
+          "Cocina",
+          "Lavadora",
+          "Se admiten mascotas"
+        ],
+        "zh": [
+          "阳台",
+          "厨房",
+          "洗衣机",
+          "允许携带宠物"
+        ]
+      },
+      "cautions": {
+        "en": [],
+        "fr": [],
+        "de": [],
+        "es": [],
+        "zh": []
+      }
+    },
+    {
+      "id": "157813",
+      "name": "Montreux Escape: 2BR with Balcony & Lake Views",
+      "kind": "apartment",
+      "maxGuests": 5,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "featuredPath": "/stays/montreux-escape/",
+      "image": {
+        "src": "/assets/lake-apartment.webp",
+        "alt": {
+          "en": "Bedroom shown in the Montreux Escape listing",
+          "fr": "Chambre présentée dans l’annonce Montreux Escape",
+          "de": "Schlafzimmer aus dem Angebot Montreux Escape",
+          "es": "Dormitorio mostrado en el anuncio de Montreux Escape",
+          "zh": "Montreux Escape 房源中展示的卧室"
+        }
+      },
+      "summary": {
+        "en": "A two-bedroom apartment in Montreux with a balcony and lake views.",
+        "fr": "Un appartement de deux chambres à Montreux, avec balcon et vue sur le lac.",
+        "de": "Ein Apartment mit zwei Schlafzimmern, Balkon und Seeblick in Montreux.",
+        "es": "Un apartamento de dos dormitorios en Montreux, con balcón y vistas al lago.",
+        "zh": "位于蒙特勒的一套两卧室公寓，带阳台和湖景。"
+      },
+      "facts": {
+        "en": [
+          "Balcony",
+          "Lake views",
+          "Kitchen",
+          "Wi-Fi"
+        ],
+        "fr": [
+          "Balcon",
+          "Vue sur le lac",
+          "Cuisine",
+          "Wi-Fi"
+        ],
+        "de": [
+          "Balkon",
+          "Seeblick",
+          "Küche",
+          "WLAN"
+        ],
+        "es": [
+          "Balcón",
+          "Vistas al lago",
+          "Cocina",
+          "Wi-Fi"
+        ],
+        "zh": [
+          "阳台",
+          "湖景",
+          "厨房",
+          "Wi-Fi"
+        ]
+      },
+      "cautions": {
+        "en": [],
+        "fr": [],
+        "de": [],
+        "es": [],
+        "zh": []
+      }
+    },
+    {
+      "id": "130308",
+      "name": "Montreux Serene: Haven Steps from the Lake",
+      "kind": "private-room",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "bathrooms": null,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-130308.webp",
+        "alt": {
+          "en": "Bedroom shown in the Montreux Serene listing",
+          "fr": "Chambre présentée dans l’annonce Montreux Serene",
+          "de": "Schlafzimmer aus dem Angebot Montreux Serene",
+          "es": "Dormitorio mostrado en el anuncio de Montreux Serene",
+          "zh": "Montreux Serene 房源中展示的卧室"
+        }
+      },
+      "summary": {
+        "en": "A bedroom stay in Montreux with access to a shared living-room balcony.",
+        "fr": "Un séjour en chambre à Montreux, avec accès au balcon du salon partagé.",
+        "de": "Ein Zimmeraufenthalt in Montreux mit Zugang zum Balkon des gemeinsam genutzten Wohnzimmers.",
+        "es": "Una estancia en habitación en Montreux, con acceso al balcón del salón compartido.",
+        "zh": "蒙特勒的一间卧室住宿，可使用共用客厅的阳台。"
+      },
+      "facts": {
+        "en": [
+          "Shared living-room balcony",
+          "Kitchen access",
+          "Internet"
+        ],
+        "fr": [
+          "Balcon du salon partagé",
+          "Accès à la cuisine",
+          "Internet"
+        ],
+        "de": [
+          "Balkon des gemeinsamen Wohnzimmers",
+          "Küchenzugang",
+          "Internet"
+        ],
+        "es": [
+          "Balcón del salón compartido",
+          "Acceso a la cocina",
+          "Internet"
+        ],
+        "zh": [
+          "共用客厅的阳台",
+          "可使用厨房",
+          "网络"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Confirm your assigned bedroom and which bathroom and kitchen facilities are private or shared before booking."
+        ],
+        "fr": [
+          "Avant de réserver, confirmez la chambre attribuée et si la salle de bains et la cuisine sont privées ou partagées."
+        ],
+        "de": [
+          "Bestätigen Sie vor der Buchung das zugewiesene Zimmer und ob Badezimmer und Küche privat oder gemeinsam genutzt werden."
+        ],
+        "es": [
+          "Antes de reservar, confirme la habitación asignada y si el baño y la cocina son privados o compartidos."
+        ],
+        "zh": [
+          "预订前，请确认分配给您的卧室，以及浴室和厨房哪些为独用、哪些需共用。"
+        ]
+      }
+    },
+    {
+      "id": "130304",
+      "name": "Elegant 2BR Suite with Dual Balconies",
+      "kind": "apartment",
+      "maxGuests": 6,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-130304.webp",
+        "alt": {
+          "en": "Kitchen shown in the Elegant 2BR Suite listing",
+          "fr": "Cuisine présentée dans l’annonce Elegant 2BR Suite",
+          "de": "Küche aus dem Angebot Elegant 2BR Suite",
+          "es": "Cocina mostrada en el anuncio de Elegant 2BR Suite",
+          "zh": "Elegant 2BR Suite 房源中展示的厨房"
+        }
+      },
+      "summary": {
+        "en": "A two-bedroom apartment with two bathrooms, two private balconies and mountain views.",
+        "fr": "Un appartement de deux chambres, avec deux salles de bains, deux balcons privés et vue sur les montagnes.",
+        "de": "Ein Apartment mit zwei Schlafzimmern, zwei Badezimmern, zwei privaten Balkonen und Bergblick.",
+        "es": "Un apartamento de dos dormitorios, con dos baños, dos balcones privados y vistas a las montañas.",
+        "zh": "一套两卧室公寓，设有两间浴室、两个私人阳台，可欣赏山景。"
+      },
+      "facts": {
+        "en": [
+          "Two private balconies",
+          "Kitchen",
+          "Wi-Fi",
+          "Washing machine"
+        ],
+        "fr": [
+          "Deux balcons privés",
+          "Cuisine",
+          "Wi-Fi",
+          "Lave-linge"
+        ],
+        "de": [
+          "Zwei private Balkone",
+          "Küche",
+          "WLAN",
+          "Waschmaschine"
+        ],
+        "es": [
+          "Dos balcones privados",
+          "Cocina",
+          "Wi-Fi",
+          "Lavadora"
+        ],
+        "zh": [
+          "两个私人阳台",
+          "厨房",
+          "Wi-Fi",
+          "洗衣机"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Third floor, without a lift. Access requires stairs."
+        ],
+        "fr": [
+          "Troisième étage, sans ascenseur. L’accès se fait par les escaliers."
+        ],
+        "de": [
+          "Dritter Stock ohne Aufzug. Der Zugang erfolgt über Treppen."
+        ],
+        "es": [
+          "Tercera planta, sin ascensor. El acceso requiere subir escaleras."
+        ],
+        "zh": [
+          "位于三楼，没有电梯。需要走楼梯。"
+        ]
+      }
+    },
+    {
+      "id": "130598",
+      "name": "1 Bedroom for 2 & Self Check-in!",
+      "kind": "private-room",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "bathrooms": null,
+      "featuredPath": null,
+      "image": {
+        "src": "/assets/portfolio-130598.webp",
+        "alt": {
+          "en": "Bedroom shown in the 1 Bedroom for 2 listing",
+          "fr": "Chambre présentée dans l’annonce 1 Bedroom for 2",
+          "de": "Schlafzimmer aus dem Angebot 1 Bedroom for 2",
+          "es": "Dormitorio mostrado en el anuncio de 1 Bedroom for 2",
+          "zh": "1 Bedroom for 2 房源中展示的卧室"
+        }
+      },
+      "summary": {
+        "en": "A private bedroom for two guests, with a shared kitchen, bathroom and living room.",
+        "fr": "Une chambre privée pour deux voyageurs, avec cuisine, salle de bains et salon partagés.",
+        "de": "Ein Privatzimmer für zwei Gäste mit gemeinsam genutzter Küche, Badezimmer und Wohnzimmer.",
+        "es": "Una habitación privada para dos huéspedes, con cocina, baño y salón compartidos.",
+        "zh": "可住两人的独立卧室，厨房、浴室和客厅均为共用。"
+      },
+      "facts": {
+        "en": [
+          "Shared kitchen",
+          "Shared bathroom",
+          "Shared living room"
+        ],
+        "fr": [
+          "Cuisine partagée",
+          "Salle de bains partagée",
+          "Salon partagé"
+        ],
+        "de": [
+          "Gemeinsame Küche",
+          "Gemeinsames Badezimmer",
+          "Gemeinsames Wohnzimmer"
+        ],
+        "es": [
+          "Cocina compartida",
+          "Baño compartido",
+          "Salón compartido"
+        ],
+        "zh": [
+          "共用厨房",
+          "共用浴室",
+          "共用客厅"
+        ]
+      },
+      "cautions": {
+        "en": [
+          "Confirm the bedroom assigned to your reservation before booking."
+        ],
+        "fr": [
+          "Avant de réserver, confirmez la chambre attribuée à votre réservation."
+        ],
+        "de": [
+          "Bestätigen Sie vor der Buchung das Ihrer Reservierung zugewiesene Zimmer."
+        ],
+        "es": [
+          "Confirme la habitación asignada a su reserva antes de reservar."
+        ],
+        "zh": [
+          "预订前，请确认将分配给您预订的卧室。"
+        ]
+      }
+    }
+  ]
+}

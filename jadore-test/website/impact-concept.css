@@ -1,0 +1,28 @@
+.impact-concept{background:#e7ede0;border:1px solid #ced9c6;border-radius:24px;padding:42px;display:grid;grid-template-columns:1.1fr 1fr;gap:30px 42px;margin-block:30px 90px}
+.impact-concept h2{font-size:clamp(36px,3.6vw,54px);margin:12px 0 20px}
+.impact-intro>p:not(.eyebrow){font-size:16px;line-height:1.65;max-width:45ch}
+.impact-inactive{border-left:2px solid #58704f;padding-left:14px}
+.impact-concept .text-link,.impact-preview .text-link{border:0;background:none;color:#173d43;cursor:pointer;min-height:44px;text-align:left;font:inherit;text-decoration:underline;text-underline-offset:5px}
+.impact-programmes{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-self:center}
+.impact-programmes article{background:#f8f8ee;border:1px solid #d4dccd;border-radius:15px;padding:22px}
+.impact-symbol{display:block;color:#58704f;font-size:30px;margin-bottom:14px}
+.impact-programmes h3{font-size:23px;margin:0 0 12px}
+.impact-programmes p{font-size:15px;line-height:1.6}
+.impact-candidate{border-top:1px solid #d4dccd;padding-top:14px}
+.impact-details{grid-column:1/-1;border-top:1px solid #c3cebb;padding-top:12px}
+.impact-details summary{cursor:pointer;min-height:44px;padding-block:10px;font-weight:600}
+.impact-details p{font-size:15px;line-height:1.6;max-width:95ch}
+.impact-preview{width:min(620px,calc(100% - 32px));padding:40px;max-height:90dvh;overflow:auto}
+.impact-preview .dialog-close{position:static;display:block;width:auto;min-height:44px;margin-left:auto;font-size:15px;padding:0 10px}
+.impact-preview h2{font-size:42px}
+.impact-preview>p,.impact-choices legend{font-size:16px;line-height:1.65}
+.impact-choices{border:0;margin:22px 0;padding:0}
+.impact-choices legend{padding:0;margin-bottom:12px;font-weight:600}
+.impact-choices label{display:flex;align-items:center;gap:14px;padding:16px;margin:8px 0;border:1px solid #c3cebb;border-radius:12px;cursor:pointer;min-height:52px}
+.impact-choices input{width:20px;height:20px;accent-color:#173d43;flex-shrink:0}
+.impact-actions{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.impact-actions .button:disabled{opacity:.6;cursor:default}
+.impact-demo-status p{font-size:15px;line-height:1.6;background:#e7ede0;border-radius:10px;padding:15px}
+.impact-demo-status p[hidden]{display:none}
+@media(max-width:1000px){.impact-concept{grid-template-columns:1fr}.impact-intro>p:not(.eyebrow){max-width:65ch}}
+@media(max-width:600px){.impact-concept{padding:24px;border-radius:18px;margin-bottom:55px;gap:22px}.impact-programmes{grid-template-columns:1fr}.impact-programmes article{padding:20px}.impact-preview{padding:22px}.impact-preview h2{font-size:34px}.impact-preview .eyebrow{margin-top:12px}}
