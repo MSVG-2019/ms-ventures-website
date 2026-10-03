@@ -52,6 +52,8 @@ function setLanguage(value){
   clearBookingError();
   document.querySelectorAll('.stay-card a').forEach(anchor=>{const match=new URL(anchor.href).pathname.match(/\/stays\/([a-z0-9-]+)\//);if(match)anchor.href=`/${lang==='en'?'':lang+'/'}stays/${match[1]}/`;});
   $('[data-i18n="allStays"]').href=`/${lang==='en'?'':lang+'/'}all-stays/`;
+  const arrivalPreviewLink=$('[data-i18n="arrivalPreviewLink"]');
+  if(arrivalPreviewLink)arrivalPreviewLink.href=`/arrival-preview.html?lang=${lang}`;
   syncSearchSelection();
   renderGuide();renderFilterStatus();
   if($('#booking-dialog').open)renderSelection();

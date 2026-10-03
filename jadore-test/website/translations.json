@@ -189,7 +189,8 @@
     "impactSkip": "Passer cette étape",
     "impactLiteracyResult": "Choix de démonstration : lecture. Rien n’a été enregistré ou envoyé ; aucune contribution n’a été versée.",
     "impactHealthResult": "Choix de démonstration : santé. Rien n’a été enregistré ou envoyé ; aucune contribution n’a été versée.",
-    "impactSkipResult": "Démonstration passée : la lecture serait l’affectation proposée par défaut. Rien n’a été enregistré ou envoyé ; aucune contribution n’a été versée."
+    "impactSkipResult": "Démonstration passée : la lecture serait l’affectation proposée par défaut. Rien n’a été enregistré ou envoyé ; aucune contribution n’a été versée.",
+    "arrivalPreviewLink": "Aperçu du parcours d’arrivée ↗"
   },
   "de": {
     "skip": "Zum Inhalt springen",
@@ -381,7 +382,8 @@
     "impactSkip": "Schritt überspringen",
     "impactLiteracyResult": "Demo-Auswahl: Leseförderung. Nichts wurde gespeichert oder gesendet; kein Beitrag wurde überwiesen.",
     "impactHealthResult": "Demo-Auswahl: Gesundheit. Nichts wurde gespeichert oder gesendet; kein Beitrag wurde überwiesen.",
-    "impactSkipResult": "Demo übersprungen: Leseförderung wäre die vorgeschlagene Standardzuteilung. Nichts wurde gespeichert oder gesendet; kein Beitrag wurde überwiesen."
+    "impactSkipResult": "Demo übersprungen: Leseförderung wäre die vorgeschlagene Standardzuteilung. Nichts wurde gespeichert oder gesendet; kein Beitrag wurde überwiesen.",
+    "arrivalPreviewLink": "Vorschau der Anreise ↗"
   },
   "es": {
     "skip": "Ir al contenido",
@@ -573,7 +575,8 @@
     "impactSkip": "Omitir este paso",
     "impactLiteracyResult": "Elección de demostración: alfabetización. Nada se ha guardado ni enviado; no se ha realizado ninguna aportación.",
     "impactHealthResult": "Elección de demostración: salud. Nada se ha guardado ni enviado; no se ha realizado ninguna aportación.",
-    "impactSkipResult": "Demostración omitida: alfabetización sería la opción predeterminada propuesta. Nada se ha guardado ni enviado; no se ha realizado ninguna aportación."
+    "impactSkipResult": "Demostración omitida: alfabetización sería la opción predeterminada propuesta. Nada se ha guardado ni enviado; no se ha realizado ninguna aportación.",
+    "arrivalPreviewLink": "Vista previa de la llegada ↗"
   },
   "zh": {
     "skip": "跳转到主要内容",
@@ -765,6 +768,7 @@
     "impactSkip": "跳过这一步",
     "impactLiteracyResult": "演示选择：读写教育。没有保存或发送任何信息，也没有进行捐助。",
     "impactHealthResult": "演示选择：健康。没有保存或发送任何信息，也没有进行捐助。",
-    "impactSkipResult": "已跳过演示选择：拟议的默认分配将为读写教育。没有保存或发送任何信息，也没有进行捐助。"
+    "impactSkipResult": "已跳过演示选择：拟议的默认分配将为读写教育。没有保存或发送任何信息，也没有进行捐助。",
+    "arrivalPreviewLink": "抵达流程预览 ↗"
   }
 }
