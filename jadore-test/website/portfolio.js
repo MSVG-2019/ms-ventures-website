@@ -22,11 +22,11 @@
   function update(){
     const current=values(),code=selection.validate(current),party=Number(guests.value),needle=normal(search.value);let shown=0;
     for(const item of cards){const matches=Number.isInteger(party)&&party>=1&&party<=6&&item.max>=party&&(type.value==='all'||type.value==='entire'&&item.kind!=='private-room'||type.value===item.kind)&&(!needle||normal(item.text).includes(needle));item.card.hidden=!matches;if(matches)shown++;
-      item.link.href=item.native&&code?'#portfolio-search':selection.urlFor(item.href,selection.get());
+      item.link.href=item.native&&code?'#portfolio-search':selection.urlFor(item.href,selection.getDraft());
     }
     count.textContent=copy.count(shown,party);empty.textContent=copy.none;empty.hidden=shown!==0;
   }
-  const incoming=selection.get();if(incoming){arrival.value=incoming.start;departure.value=incoming.end;guests.value=String(incoming.guests);}
+  const incoming=selection.getDraft();if(incoming){arrival.value=incoming.start;departure.value=incoming.end;if(incoming.guests!==null)guests.value=String(incoming.guests);}
   arrival.min=selection.today();departure.min=next(arrival.value||selection.today());
   [arrival,departure,guests].forEach(field=>field.addEventListener('change',()=>{clearError();if(selection.validDate(arrival.value))departure.min=next(arrival.value);selection.set(values());update();}));
   type.addEventListener('change',update);search.addEventListener('input',update);

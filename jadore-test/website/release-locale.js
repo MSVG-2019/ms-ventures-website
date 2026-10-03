@@ -11,7 +11,7 @@ if (select && links) {
     if (urls[select.value]) {
       const travel = window.JADORE_SELECTION;
       travel?.set({start:document.querySelector('#check-in').value,end:document.querySelector('#check-out').value,guests:document.querySelector('#guests').value});
-      window.location.assign(travel?.urlFor(urls[select.value], travel.get()) || urls[select.value]);
+      window.location.assign(travel?.urlFor(urls[select.value], travel.getDraft()) || urls[select.value]);
     }
   }, true);
 }

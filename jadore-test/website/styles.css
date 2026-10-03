@@ -21,3 +21,8 @@ html[lang="zh"]{--sans:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;--se
 
 /* Preserve the authored Chinese phrase breaks on narrow screens. */
 html[lang="zh"] .hero h1 br:last-child{display:inline}
+
+.booking-price-note{font-size:14px;line-height:1.75;color:var(--body);margin-top:10px;max-width:940px}
+
+/* Review-only notice: connected vendor links still open the existing live site. */
+.preview-note{font-size:14px;line-height:1.5;letter-spacing:.01em;overflow-wrap:anywhere}
