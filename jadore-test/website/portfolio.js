@@ -12,6 +12,13 @@
     es:{"missing":"Elija las fechas de llegada y salida para consultar su precio.","past":"Elija hoy o una fecha futura para su llegada.","order":"La fecha de salida debe ser posterior a la de llegada.","guests":"Elija entre 1 y 6 huéspedes.","none":"Ningún alojamiento coincide con estos filtros. Pruebe otro tipo de estancia, una búsqueda diferente o contacte con nuestro equipo.","count":(n,g)=>"{count} {optionLabel} de alojamiento para {guests} {guestLabel}.".replace('{count}',String(n)).replace('{guests}',String(g)).replace('{optionLabel}',n===1?"opción":"opciones").replace('{guestLabel}',g===1?"huésped":"huéspedes")},
     zh:{"missing":"请选择入住和退房日期，以查看价格。","past":"请选择今天或之后的入住日期。","order":"退房日期必须晚于入住日期。","guests":"请选择 1 至 6 人。","none":"没有符合这些筛选条件的住宿选项。请尝试其他住宿类型、修改搜索，或联系我们的团队。","count":(n,g)=>"{n} 个住宿选项可容纳 {g} 人。".replace('{n}',String(n)).replace('{g}',String(g))}
   }[lang];
+  const capacityCopy={
+    en:'These stay options cannot accommodate your whole group. Choose another type of stay or contact our team. Reduce the guest count only if fewer people will be staying.',
+    fr:'Ces logements ne peuvent pas accueillir tout votre groupe. Choisissez un autre type de logement ou contactez notre équipe. Réduisez le nombre de voyageurs uniquement si moins de personnes séjournent.',
+    de:'Diese Unterkünfte bieten nicht genug Platz für Ihre gesamte Gruppe. Wählen Sie eine andere Unterkunftsart oder kontaktieren Sie unser Team. Verringern Sie die Gästezahl nur, wenn weniger Personen übernachten.',
+    es:'Estos alojamientos no tienen capacidad para todo el grupo. Elige otro tipo de estancia o contacta con nuestro equipo. Reduce el número de huéspedes solo si se alojarán menos personas.',
+    zh:'这些住宿选项无法容纳您的整个同行团体。请选择其他住宿类型，或联系我们的团队。只有实际入住人数减少时，才应减少房客人数。'
+  }[lang];
   const arrival=document.querySelector('#portfolio-check-in'),departure=document.querySelector('#portfolio-check-out'),guests=document.querySelector('#portfolio-guests'),type=document.querySelector('#portfolio-kind'),search=document.querySelector('#portfolio-query'),error=document.querySelector('#portfolio-error'),count=document.querySelector('#portfolio-count'),empty=document.querySelector('#portfolio-empty');
   const cards=Array.from(document.querySelectorAll('.portfolio-card')).map(card=>({card,kind:card.dataset.kind,max:Number(card.dataset.maxGuests),text:card.textContent,link:card.querySelector('.portfolio-booking-link'),href:card.querySelector('.portfolio-booking-link').href,native:card.querySelector('.portfolio-booking-link').dataset.bookingType==='native'}));
   function normal(value){return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase(lang).trim();}
@@ -21,11 +28,15 @@
   function next(value){const date=new Date(value+'T12:00:00Z');date.setUTCDate(date.getUTCDate()+1);return date.toISOString().slice(0,10);}
   function update(){
     const current=values(),code=selection.validate(current),party=Number(guests.value),needle=normal(search.value);let shown=0;
+    selection.setCatalogKind(type.value);
     for(const item of cards){const matches=Number.isInteger(party)&&party>=1&&party<=6&&item.max>=party&&(type.value==='all'||type.value==='entire'&&item.kind!=='private-room'||type.value===item.kind)&&(!needle||normal(item.text).includes(needle));item.card.hidden=!matches;if(matches)shown++;
       item.link.href=item.native&&code?'#portfolio-search':selection.urlFor(item.href,selection.getDraft());
     }
-    count.textContent=copy.count(shown,party);empty.textContent=copy.none;empty.hidden=shown!==0;
+    const ofKind=cards.filter(item=>type.value==='all'||type.value==='entire'&&item.kind!=='private-room'||type.value===item.kind);
+    const lacksCapacity=Number.isInteger(party)&&party>=1&&party<=6&&ofKind.length>0&&ofKind.every(item=>item.max<party);
+    count.textContent=copy.count(shown,party);empty.textContent=lacksCapacity?capacityCopy:copy.none;empty.hidden=shown!==0;
   }
+  type.value=selection.getCatalogKind();
   const incoming=selection.getDraft();if(incoming){arrival.value=incoming.start;departure.value=incoming.end;if(incoming.guests!==null)guests.value=String(incoming.guests);}
   arrival.min=selection.today();departure.min=next(arrival.value||selection.today());
   [arrival,departure,guests].forEach(field=>field.addEventListener('change',()=>{clearError();if(selection.validDate(arrival.value))departure.min=next(arrival.value);selection.set(values());update();}));

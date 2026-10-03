@@ -3,6 +3,13 @@
 (function () {
   const providerOrigin = 'https://jadore-montreux.holidayfuture.com';
   const homeOrStay = /^\/(?:index\.html|(?:fr|de|es|zh)\/(?:index\.html)?)?$|^\/(?:fr\/|de\/|es\/|zh\/)?(?:stays\/[a-z0-9-]+|all-stays)\/(?:index\.html)?$/;
+  const catalogPath = /^\/(?:fr\/|de\/|es\/|zh\/)?all-stays\/(?:index\.html)?$/;
+  const catalogKinds = ['all', 'entire', 'studio', 'private-room'];
+  let catalogKind = 'all';
+  if (catalogPath.test(new URL(window.location.href).pathname)) {
+    const incomingKind = new URLSearchParams(window.location.search).get('kind');
+    if (catalogKinds.includes(incomingKind)) catalogKind = incomingKind;
+  }
   function today() {
     const parts = new Intl.DateTimeFormat('en', {timeZone:'Europe/Zurich',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
     const values = Object.fromEntries(parts.map(x => [x.type,x.value]));
@@ -51,6 +58,7 @@
       if (draft?.start) target.searchParams.set('start', draft.start);
       if (draft?.end) target.searchParams.set('end', draft.end);
       if (draft?.guests !== null && draft?.guests !== undefined) target.searchParams.set('numberOfGuests', String(draft.guests));
+      if (catalogPath.test(target.pathname) && catalogKind !== 'all') target.searchParams.set('kind', catalogKind);
     } else if (value && !validate(value, 6, currentDay)) {
       if (/^\/all-listings\/?$/.test(target.pathname)) target.pathname = '/search';
       target.searchParams.set('start', value.start);
@@ -75,7 +83,12 @@
     decorateAll();
     return selection ? {...selection} : null;
   }
-  window.JADORE_SELECTION = Object.freeze({today,validDate,validate,read,readDraft,urlFor,set,decorateLink,get:()=>selection ? {...selection} : null,getDraft:()=>draft ? {...draft} : null});
+  function setCatalogKind(value) {
+    catalogKind = catalogKinds.includes(value) ? value : 'all';
+    set(draft);
+    return catalogKind;
+  }
+  window.JADORE_SELECTION = Object.freeze({today,validDate,validate,read,readDraft,urlFor,set,setCatalogKind,decorateLink,getCatalogKind:()=>catalogKind,get:()=>selection ? {...selection} : null,getDraft:()=>draft ? {...draft} : null});
   decorateAll();
   // Newly rendered concierge links and locale links receive the same bounded handoff.
   document.addEventListener('click', event => decorateLink(event.target.closest?.('a[href]')), true);
